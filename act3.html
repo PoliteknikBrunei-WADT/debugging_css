@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging CSS</title>
+</head>
+<body>
+    <ul>
+        <li>Right-click the <code>Add A Class To Me!</code> element below and select <strong>Inspect</strong>.</li>
+    </ul>
+    <style>
+        
+/* red orange yellow green blue indigo violet */
+@keyframes rainbow {
+  0% {
+    background-color: violet;
+  }
+  14% {
+    background-color: red;
+  }
+  28% {
+    background-color: orange;
+  }
+  42% {
+    background-color: yellow;
+  }
+  56% {
+    background-color: green;
+  }
+  70% {
+    background-color: blue;
+  }
+  84% {
+    background-color: indigo;
+  }
+  100% {
+    background-color: violet;
+  }
+}
+.color_me {
+  animation: rainbow 10s linear infinite;
+}
+p {
+  display: inline-block;
+  border: 1px dashed red;
+  padding: 1em;
+}
+
+        </style>
+        <p class="aloha" data-message="peekaboo!">Add A Class To Me!</p>
+        <ul>
+            <li>
+                Click <strong>.cls</strong>. DevTools reveals a text box where you can add classes to the selected element.
+            </li>
+            <li>
+                Type <code>color_me</code> in the <strong>Add new class</strong> text box and then press Enter. A checkbox appears below the <strong>Add new class</strong> text box, where you can toggle the class on and off. If the <code>Add A Class To Me!</code> element had any other classes applied to it, you'd also be able to toggle them from here.
+            </li>
+        </ul>
+</body>
+</html>
