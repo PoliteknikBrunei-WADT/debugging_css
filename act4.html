@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debugging CSS</title>
+  </head>
+  <body>
+    <ul>
+      <li>
+        Hover over the <code>Hover Over Me!</code> text below. The background color changes.
+      </li>
+    </ul>
+    <style>
+      p {
+        display: inline-block;
+        border: 1px dashed red;
+        padding: 1em;
+      }
+      p:hover {
+        background-color: cornflowerblue;
+      }
+    </style>
+    <p class="aloha" data-message="peekaboo!">Add A Class To Me!</p>
+    <ul>
+      <li>
+        Right-click the <code>Hover Over Me!</code> text and select <strong>Inspect</strong>.
+      </li>
+
+      <li>
+        In the <strong>Styles</strong> tab, click <strong>:hov</strong>.
+      </li>
+
+      <li>
+        Check the <strong>:hover</strong> checkbox. The background color changes like before,
+        even though you're not actually hovering over the element.
+      </li>
+    </ul>
+  </body>
+</html>
