@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debugging CSS</title>
+  </head>
+  <body>
+    <ul>
+      <li>
+        Right-click the <code>Change My Margin!</code> element below and select <strong>Inspect</strong>.
+      </li>
+    </ul>
+    <style>
+      p {
+        display: inline-block;
+        border: 1px dashed red;
+        padding: 1em;
+      }
+
+      aside {
+        background: #e1f5fe;
+        color: #01579b;
+        padding-left: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .note {
+        display: block;
+        font-size: 14px;
+        margin: 16px 0;
+        padding: 16px 24px;
+        padding-left: 24px;
+      }
+    </style>
+    <p id="target">Change My Margin!</p>
+    <ul>
+      <li>
+        In the <strong>Box Model</strong> diagram in the <strong>Styles</strong> tab, hover over <strong>padding</strong>. The
+        element's padding is highlighted in the viewport.
+      </li>
+
+      <aside class="note">
+        Note: Depending on the size of your DevTools window, you may need to
+        scroll to the bottom of the <strong>Styles</strong> tab to see the <strong>Box Model</strong>.
+      </aside>
+
+      <li>
+        Double-click the left margin in the <strong>Box Model</strong>, which currently has a
+        value of - meaning that the element doesn't have a left-margin.
+      </li>
+
+      <li>
+        Type <code>100</code> and press Enter. The <strong>Box Model</strong> defaults to pixels, but it also
+        accepts other values, such as <code>25%</code>, or <code>10vw</code>.
+      </li>
+    </ul>
+  </body>
+</html>
