@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging CSS</title>
+</head>
+<body>
+    <ul>
+        <li>
+            Right-click the <code>
+                Inspect Me!
+            </code> text below and select <strong>Inspect</strong>. The Elements panel of DevTools opens. The <code>
+                Inspect Me!
+            </code> element is highlighted in the <strong>DOM Tree</strong>.
+        </li>
+    </ul>
+    <style>
+        p {
+          display: inline-block;
+          border: 1px dashed red;
+          padding: 1em;
+        }
+        .aloha {
+          padding: 1em;
+        }
+        </style>
+        <p class="aloha" data-message="peekaboo!">Inspect Me!</p>
+</body>
+</html>
