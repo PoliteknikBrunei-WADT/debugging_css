@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging CSS</title>
+</head>
+<body>
+    <ul>
+        <li>
+            Right-click the <code>Add A Background Color To Me!</code> text below and select <strong>Inspect</strong>.
+        </li>
+    </ul>
+    <style>
+        p {
+          display: inline-block;
+          border: 1px dashed red;
+          padding: 1em;
+        }
+        .aloha {
+          padding: 1em;
+        }
+        </style>
+        <p class="aloha" data-message="peekaboo!">Add A Background Color To Me!</p>
+        <ul>
+            <li>Click <code>element.style</code> near the top of the <strong>Styles</strong> tab.</li>
+            <li>Type <code>background-color</code> and press <kbd>Enter</kbd>.</li>
+            <li>Type <code>honeydew</code> and press <kbd>Enter</kbd>. In the <strong>DOM Tree</strong> you can see that an inline style declaration was applied to the element.</li>
+        </ul>
+</body>
+</html>
